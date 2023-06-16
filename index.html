@@ -18,22 +18,24 @@
 <body>
 
     <header>
-        <h1>Ohmyfood</h1>
+        <img src="images/logo/ohmyfood.png" alt="logo ohmyfood">
+
+        <div class="localisation">
+            <i class="fa-solid fa-map-marker-alt"></i>
+            <p>Paris, Belleville</p>
+        </div>
     </header>
 
     <main>
 
-        <header>
-
-            <form>
-                <i class="fa-solid fa-map-marker-alt"></i>
-                <input type="search" value="Paris, Belleville">
-            </form>
-
-                <h2>Réservez le menu qui vous convient</h2>
+        <section class="reservation">
+            <div class="reservation-titre">
+                <h1>Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
-                <a href="#restaurants">Explorer nos restaurants</a>
-        </header>
+            </div>
+
+            <a href="#restaurants">Explorer nos restaurants</a>
+        </section>
 
         <section class="fonctionnement">
             <h2>Fonctionnement</h2>
@@ -60,7 +62,7 @@
             </ul>
         </section>
 
-        <section id="restaurants">
+        <section class="restaurants" id="restaurants">
             <h2>Restaurants</h2>
             <ul>
 
@@ -143,7 +145,7 @@
                 <li>
                     <a href="#">
                         <i class="fa-solid fa-utensils"></i>
-                        <p>Proposer un restaurant</p>
+                        <p class="footer-restaurants">Proposer un restaurant</p>
                     </a>
                 </li>
 
