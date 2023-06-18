@@ -97,3 +97,56 @@ h2{
   left: 365px;
   margin-top: -15px;
 }
+
+/************Footer************/
+
+footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  background-color: #353535;
+  padding: 22px 20px 33px 20px;
+}
+
+footer h3{
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-weight: 900;
+  font-size: 18px;
+  color: #FFF;
+}
+
+footer ul{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #353535;
+}
+
+footer li{
+  list-style: none;
+}
+
+footer a{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 11px;
+  color: #FFF;
+  text-decoration: none;
+}
+
+.footer-restaurants{
+  padding-left: 6px;
+}
+
+/***************Version Tablette***************/
+@media (min-width: 768px) {
+  
+}
+
+/***************Version Desktop***************/
+@media (min-width: 1200px) {
+  
+}
