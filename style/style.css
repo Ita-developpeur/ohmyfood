@@ -174,17 +174,32 @@ header img{
   background-color: #99E2D0;
   padding: 9px 7px 7px 9px;
   border-radius: 2px;
-  right: 33px;
-  margin-top: -170px;
+  right: 30px;
+  margin-top: -180px;
   color: #008766;
 }
 
-.coeur i{
-  position: relative;
-  right: 25px;
-  top: -50px;
-  visibility: visible;
+figcaption{
+  padding: 10px;
+}
+
+.coeur{
+  display: flex;
+  position: absolute;
+  right: 65px;
+  margin-top: -30px;
+}
+
+.coeur-vide{
+  position: absolute;
+  font-size: 25px;
   opacity: 1;
+}
+
+.coeur-rempli{
+  position: absolute;
+  opacity: 0;
+  color: transparent;
 }
 
 /************Footer************/
@@ -201,7 +216,7 @@ footer{
 footer h3{
   font-family: "Shrikhand";
   font-style: italic;
-  font-weight: 400;
+  font-weight: 900;
   font-size: 18px;
   color: #FFF;
 }

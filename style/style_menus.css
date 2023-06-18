@@ -1,0 +1,99 @@
+/***************Principal***************/
+*{
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+  
+  :root{
+    --main-color1:#9356DC;
+    --main-color2:#003A68;
+    --main-color3:#89C8FA;
+    --main-color4:#008766;
+    --main-color5:#99E2D0;
+    --main-color6:#fcc0ce;
+    --main-color7:#fff;
+    --main-color8:#000;
+  }
+
+/************Logo************/
+
+.logo-menus{
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.logo-menus img {
+  width: 162px;
+  padding: 14px 0 8px 0;
+}
+
+.logo-menus i{
+  position: absolute;
+  left: 23px;
+  top: 18px;
+  color: #000;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+/************Header************/
+
+.image-restaurant{
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 55px;
+}
+
+h1{
+  margin-top: 200px;
+  background-color: #F6F6F6;
+  border-radius: 40px 40px 0px 0px;
+  padding: 32px 0px 32px 13px;
+  font-family: "Shrikhand";
+  font-style: italic;
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.coeur{
+  display: flex;
+  position: absolute;
+  right: 60px;
+  margin-top: -60px;
+}
+
+.coeur-vide{
+  position: absolute;
+  font-size: 25px;
+  opacity: 1;
+}
+
+.coeur-rempli{
+  position: absolute;
+  opacity: 0;
+  color: transparent;
+}
+
+/************Menus************/
+
+ul{
+  width: 100%;
+  background-color: #F6F6F6;
+  list-style: none;
+}
+
+h2{
+  width: 100%;
+  background-color: #F6F6F6;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.prix{
+  position: absolute;
+  left: 365px;
+  margin-top: -15px;
+}
