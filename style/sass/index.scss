@@ -11,12 +11,6 @@
     margin: 0;
   }
   
-  :root {
-    @each $key, $value in $colors {
-      --#{$key}: #{$value};
-    }
-  }
-  
   /************Logo************/
   
   header {
