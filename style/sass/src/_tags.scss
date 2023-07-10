@@ -1,0 +1,52 @@
+* {
+  font-family: "Roboto", sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+/************Logo************/
+
+header {
+  text-align: center;
+
+  img {
+    width: 162px;
+    padding: 14px 8px;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 14px;
+  background-color: #353535;
+  padding: 22px 20px 33px 20px;
+
+  h3 {
+    font-family: "Shrikhand";
+    font-style: italic;
+    font-weight: 900;
+    font-size: 18px;
+    color: #fff;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      list-style: none;
+
+      a {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 11px;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
