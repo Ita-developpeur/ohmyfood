@@ -15,7 +15,6 @@
   margin: 0;
 }
 
-/************Logo************/
 header {
   text-align: center;
 }
@@ -54,6 +53,23 @@ footer ul li a {
   gap: 11px;
   color: #fff;
   text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  border: none;
+  width: 218px;
+  height: 50px;
+  opacity: 1;
+  text-align: center;
+  color: #FFF;
+  font-size: 16px;
+}
+button:hover, button:focus {
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
 }
 
 .localisation {
@@ -127,6 +143,9 @@ footer ul li a {
   background-color: #f6f6f6;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
+.fonctionnement ul li:hover i, .fonctionnement ul li:focus i {
+  color: #9356dc;
+}
 .fonctionnement ul li span {
   background-color: #9356dc;
   color: #fff;
@@ -150,9 +169,6 @@ footer ul li a {
 .restaurants {
   background-color: #f7f7f7;
   padding: 48px 20px;
-  /***************Page Restaurants***************/
-  /************Header************/
-  /************Menus************/
 }
 .restaurants h2 {
   padding-bottom: 25px;
@@ -207,21 +223,33 @@ footer ul li a {
   font-size: 25px;
   opacity: 1;
 }
+.restaurants ul a .coeur-vide:hover, .restaurants ul a .coeur-vide:focus {
+  opacity: 0;
+}
 .restaurants ul a .coeur-rempli {
   position: absolute;
   opacity: 0;
   color: transparent;
+  font-size: 25px;
 }
-.restaurants .logo-menus {
+.restaurants ul a .coeur-rempli:hover, .restaurants ul a .coeur-rempli:focus {
+  opacity: 1;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
+  transition: all 400ms ease-out;
+}
+
+/***************Page Restaurants***************/
+.logo-menus {
   width: 100%;
   text-align: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
-.restaurants .logo-menus img {
+.logo-menus img {
   width: 162px;
   padding: 14px 0 8px 0;
 }
-.restaurants .logo-menus i {
+.logo-menus i {
   position: absolute;
   left: 23px;
   top: 18px;
@@ -229,14 +257,19 @@ footer ul li a {
   font-size: 17px;
   font-weight: 900;
 }
-.restaurants .image-restaurant {
+
+/************Header************/
+.image-restaurant {
   width: 100%;
   position: absolute;
   z-index: -1;
   top: 55px;
   display: flex;
+  padding: 0;
+  margin: 0;
 }
-.restaurants .titre-restaurant {
+
+.titre-restaurant {
   margin-top: 200px;
   border-radius: 40px 40px 0px 0px;
   padding: 32px 0px 32px 13px;
@@ -244,34 +277,49 @@ footer ul li a {
   font-style: italic;
   font-size: 28px;
   font-weight: 900;
+  display: flex;
 }
-.restaurants .coeur-restaurant {
+
+.coeur-restaurant {
   display: flex;
   position: absolute;
   right: 60px;
   margin-top: -60px;
 }
-.restaurants .coeur-restaurant .coeur-vide {
+.coeur-restaurant .coeur-vide {
   position: absolute;
   font-size: 25px;
   opacity: 1;
 }
-.restaurants .coeur-restaurant .coeur-rempli {
+.coeur-restaurant .coeur-vide:hover, .coeur-restaurant .coeur-vide:focus {
+  opacity: 0;
+}
+.coeur-restaurant .coeur-rempli {
   position: absolute;
   opacity: 0;
   color: transparent;
+  font-size: 25px;
 }
-.restaurants .restaurant-main {
+.coeur-restaurant .coeur-rempli:hover, .coeur-restaurant .coeur-rempli:focus {
+  opacity: 1;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  background-clip: text;
+  transition: all 400ms ease-out;
+}
+
+/************Menus************/
+.restaurant-main {
   background-color: #F6F6F6;
   border-radius: 40px 40px 0 0;
 }
-.restaurants .epd {
+
+.epd {
   display: flex;
   flex-direction: column;
   padding: 0px 13px;
   gap: 15px;
 }
-.restaurants .epd h2 {
+.epd h2 {
   width: 40px;
   text-transform: uppercase;
   border-bottom: #99E2D0 3px solid;
@@ -279,7 +327,7 @@ footer ul li a {
   font-weight: 300;
   font-size: 16px;
 }
-.restaurants .epd ul {
+.epd ul {
   width: 100%;
   list-style: none;
   gap: 10px;
@@ -287,40 +335,49 @@ footer ul li a {
   flex-direction: column;
   padding-bottom: 40px;
 }
-.restaurants .epd article li {
+.epd li {
   width: 100%;
-  height: 59px;
+  height: 72px;
   border-radius: 15px;
   border: none;
   background-color: #FFF;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
 }
-.restaurants .epd article li .validation {
+.epd li:hover .validation i, .epd li:focus .validation i {
+  width: 60px;
+  animation: left 1s ease;
+  transform-origin: right;
+  transition-property: all;
+  color: white;
+}
+.epd li .validation {
   display: flex;
   justify-content: flex-end;
 }
-.restaurants .epd article li .prix {
+.epd li .prix {
   font-weight: 700;
+  right: 10px;
+  position: relative;
 }
-.restaurants .epd article li .nom-plats {
+.epd li .nom-plats {
   display: flex;
   flex-direction: column;
   position: relative;
   right: -10px;
-  bottom: -10px;
+  bottom: -16px;
 }
-.restaurants .epd article li button {
-  cursor: pointer;
-  background: linear-gradient(to top, #9356DC, #FF79DA);
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  border-radius: 25px;
-  border: none;
-  width: 218px;
-  height: 50px;
-  opacity: 1;
-  text-align: center;
-  color: #FFF;
-  font-size: 16px;
+.epd li .validation i {
+  display: flex;
+  position: relative;
+  top: -40px;
+  height: 400%;
+  width: 0px;
+  background-color: #99E2D0;
+  color: transparent;
+  align-items: center;
+  border-radius: 0px 15px 15px 0px;
+  justify-content: center;
+  transition: width 1s ease;
 }
 
 .button-commander {

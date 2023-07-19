@@ -77,6 +77,11 @@
       background-color: #f6f6f6;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
 
+      &:hover i,
+      &:focus i {
+        color: #9356dc;
+      }
+
       span {
         background-color: #9356dc;
         color: #fff;
@@ -163,16 +168,33 @@
           position: absolute;
           font-size: 25px;
           opacity: 1;
+        
+
+          &:hover,
+          &:focus {
+            opacity: 0;
+          }
         }
 
         &-rempli {
           position: absolute;
           opacity: 0;
           color: transparent;
+          font-size: 25px;
+        
+
+          &:hover,
+          &:focus {
+            opacity: 1;
+            background: linear-gradient(to top, #9356DC, #FF79DA);
+            background-clip: text;
+            transition: all 400ms ease-out;
+          }
         }
       }
     }
   }
+}
 
 /***************Page Restaurants***************/
 
@@ -204,6 +226,8 @@
   z-index: -1;
   top: 55px;
   display: flex;
+  padding: 0;
+  margin: 0;
 }
 
 .titre-restaurant {
@@ -214,6 +238,7 @@
   font-style: italic;
   font-size: 28px;
   font-weight: 900;
+  display: flex;
 }
 
 .coeur-restaurant {
@@ -226,12 +251,26 @@
     position: absolute;
     font-size: 25px;
     opacity: 1;
+  
+    &:hover,
+    &:focus {
+      opacity: 0;
+    }
   }
 
   .coeur-rempli {
     position: absolute;
     opacity: 0;
     color: transparent;
+    font-size: 25px;
+  
+    &:hover,
+    &:focus {
+      opacity: 1;
+      background: linear-gradient(to top, #9356DC, #FF79DA);
+      background-clip: text;
+      transition: all 400ms ease-out;
+    }
   }
 }
 
@@ -266,13 +305,24 @@
       padding-bottom: 40px;
     }
 
-    article li {
+    li {
       width: 100%;
-      height: 59px;
+      height: 72px;
       border-radius: 15px;
       border: none;
       background-color: #FFF;
       box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+
+      &:hover,
+      &:focus {
+        .validation i {
+          width: 60px;
+          animation: left 1s ease;
+          transform-origin: right;
+          transition-property: all;
+          color: white;
+        }
+      }
 
       .validation {
         display: flex;
@@ -281,6 +331,8 @@
 
       .prix {
         font-weight: 700;
+        right: 10px;
+        position: relative;
       }
 
       .nom-plats {
@@ -288,25 +340,24 @@
         flex-direction: column;
         position: relative;
         right: -10px;
-        bottom: -10px;
+        bottom: -16px;
       }
 
-      button {
-        cursor: pointer;
-        background: linear-gradient(to top, #9356DC, #FF79DA);
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-        border-radius: 25px;
-        border: none;
-        width: 218px;
-        height: 50px;
-        opacity: 1;
-        text-align: center;
-        color: #FFF;
-        font-size: 16px;
+      .validation i {
+        display: flex;
+        position: relative;
+        top: -40px;
+        height: 400%;
+        width: 0px;
+        background-color: #99E2D0;
+        color: transparent;
+        align-items: center;
+        border-radius: 0px 15px 15px 0px;
+        justify-content: center;
+        transition: width 1s ease;
       }
     }
   }
-}
 
 .button-commander {
   padding-top: 30px;

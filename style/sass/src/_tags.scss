@@ -4,8 +4,6 @@
   margin: 0;
 }
 
-/************Logo************/
-
 header {
   text-align: center;
 
@@ -48,5 +46,24 @@ footer {
         text-decoration: none;
       }
     }
+  }
+}
+
+button {
+  cursor: pointer;
+  background: linear-gradient(to top, #9356DC, #FF79DA);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+  border: none;
+  width: 218px;
+  height: 50px;
+  opacity: 1;
+  text-align: center;
+  color: #FFF;
+  font-size: 16px;
+
+  &:hover,
+  &:focus {
+    background: linear-gradient(to bottom, #9356dc, #ff79da);
   }
 }
