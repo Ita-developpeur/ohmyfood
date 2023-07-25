@@ -367,8 +367,65 @@
   align-items: center;
 }
 
+/***************Version Tablette***************/
+
+  @media (min-width: 768px) {
+
+    .fonctionnement {
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        padding: 0px 90px;
+
+        li {
+
+          span {
+            left: 103px;
+          }
+        }
+      }
+    }
+
+    .restaurants {
+
+      ul {
+        padding: 0 70px;
+
+        a {
+
+          span {
+            right: 100px;
+          }
+
+          .coeur {
+            right: 130px;
+          }
+        }
+      }
+    }
+
+    .titre-restaurant {
+      justify-content: center;
+    }
+
+    .coeur-restaurant {
+      right: 250px;
+    }
+
+    .epd {
+      padding: 0 70px;
+    }
+  }
+
 /***************Version Desktop***************/
 
   @media (min-width: 1200px) {
-    /* TODO */
+
+    .reservation {
+      p {
+        margin-bottom: 10px;
+      }
+    }
   }

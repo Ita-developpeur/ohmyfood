@@ -72,6 +72,31 @@ button:hover, button:focus {
   background: linear-gradient(to bottom, #9356dc, #ff79da);
 }
 
+/***************Version Tablette***************/
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+  }
+  h3 {
+    display: flex;
+    align-items: center;
+  }
+}
+/***************Version Desktop***************/
+@media (min-width: 1200px) {
+  header {
+    text-align: center;
+  }
+  header img {
+    width: 200px;
+    padding: 20px 8px;
+  }
+  h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
 .localisation {
   display: flex;
   background-color: #eaeaea;
@@ -388,9 +413,41 @@ button:hover, button:focus {
   align-items: center;
 }
 
+/***************Version Tablette***************/
+@media (min-width: 768px) {
+  .fonctionnement ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0px 90px;
+  }
+  .fonctionnement ul li span {
+    left: 103px;
+  }
+  .restaurants ul {
+    padding: 0 70px;
+  }
+  .restaurants ul a span {
+    right: 100px;
+  }
+  .restaurants ul a .coeur {
+    right: 130px;
+  }
+  .titre-restaurant {
+    justify-content: center;
+  }
+  .coeur-restaurant {
+    right: 250px;
+  }
+  .epd {
+    padding: 0 70px;
+  }
+}
 /***************Version Desktop***************/
 @media (min-width: 1200px) {
-  /* TODO */
+  .reservation p {
+    margin-bottom: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
