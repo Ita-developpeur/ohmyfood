@@ -262,6 +262,7 @@ button:hover, button:focus {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   background-clip: text;
   transition: all 400ms ease-out;
+  -webkit-background-clip: text;
 }
 
 /***************Page Restaurants***************/
@@ -330,6 +331,7 @@ button:hover, button:focus {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   background-clip: text;
   transition: all 400ms ease-out;
+  -webkit-background-clip: text;
 }
 
 /************Menus************/
