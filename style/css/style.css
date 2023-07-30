@@ -67,9 +67,11 @@ button {
   text-align: center;
   color: #FFF;
   font-size: 16px;
+  transition: all 0.2s linear;
 }
 button:hover, button:focus {
-  background: linear-gradient(to bottom, #9356dc, #ff79da);
+  opacity: 0.85;
+  transition: all 0.2s linear;
 }
 
 /***************Version Tablette***************/
@@ -138,9 +140,11 @@ button:hover, button:focus {
   padding-top: 15px;
   color: #fff;
   text-decoration: none;
+  transition: all 0.2s linear;
 }
 .reservation a:hover {
-  background: linear-gradient(to bottom, #9356dc, #ff79da);
+  opacity: 0.85;
+  transition: all 0.2s linear;
 }
 
 /************Fonctionnement************/
@@ -260,9 +264,9 @@ button:hover, button:focus {
 .restaurants ul a .coeur-rempli:hover, .restaurants ul a .coeur-rempli:focus {
   opacity: 1;
   background: linear-gradient(to top, #9356DC, #FF79DA);
-  background-clip: text;
   transition: all 400ms ease-out;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /***************Page Restaurants***************/
@@ -329,9 +333,9 @@ button:hover, button:focus {
 .coeur-restaurant .coeur-rempli:hover, .coeur-restaurant .coeur-rempli:focus {
   opacity: 1;
   background: linear-gradient(to top, #9356DC, #FF79DA);
-  background-clip: text;
   transition: all 400ms ease-out;
   -webkit-background-clip: text;
+  background-clip: text;
 }
 
 /************Menus************/

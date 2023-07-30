@@ -61,10 +61,12 @@ button {
   text-align: center;
   color: #FFF;
   font-size: 16px;
+  transition: all 0.2s linear;
 
   &:hover,
   &:focus {
-    background: linear-gradient(to bottom, #9356dc, #ff79da);
+    opacity: 0.85;
+    transition: all 0.2s linear;
   }
 }
 

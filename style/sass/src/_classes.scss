@@ -43,9 +43,11 @@
     padding-top: 15px;
     color: #fff;
     text-decoration: none;
+    transition: all 0.2s linear;
 
     &:hover {
-      background: linear-gradient(to bottom, #9356dc, #ff79da);
+      opacity: 0.85;
+      transition: all 0.2s linear;
     }
   }
 }
@@ -187,9 +189,9 @@
           &:focus {
             opacity: 1;
             background: linear-gradient(to top, #9356DC, #FF79DA);
-            background-clip: text;
             transition: all 400ms ease-out;
             -webkit-background-clip: text;
+            background-clip: text;
           }
         }
       }
@@ -269,9 +271,9 @@
     &:focus {
       opacity: 1;
       background: linear-gradient(to top, #9356DC, #FF79DA);
-      background-clip: text;
       transition: all 400ms ease-out;
       -webkit-background-clip: text;
+      background-clip: text;
     }
   }
 }
