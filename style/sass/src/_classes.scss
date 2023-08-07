@@ -79,6 +79,7 @@
       border-radius: 20px;
       background-color: #f6f6f6;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+      position: relative;
 
       &:hover i,
       &:focus i {
@@ -96,7 +97,7 @@
         height: 24px;
         align-items: center;
         justify-content: center;
-        left: 25px;
+        left: -12px;
       }
 
       i {
@@ -114,57 +115,10 @@
   background-color: #f7f7f7;
   padding: 48px 20px;
 
-  h2 {
-    padding-bottom: 25px;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    list-style: none;
-
-    a {
-      display: flex;
-      width: 100%;
-      height: 250px;
-      flex-direction: column;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-      text-decoration: none;
-      color: #000;
-
-      figure {
-        height: 102%;
-      }
-
-      img {
-        height: 70%;
-        width: 100%;
-        object-fit: cover;
-      }
-
-      span {
-        display: flex;
-        position: absolute;
-        color: var(--main-color6-color);
-        background-color: #99e2d0;
-        padding: 9px 7px 7px 9px;
-        border-radius: 2px;
-        right: 30px;
-        margin-top: -180px;
-        color: #008766;
-      }
-
-      figcaption {
-        padding: 10px;
-      }
-
       .coeur {
         display: flex;
         position: absolute;
-        right: 65px;
+        right: 50px;
         margin-top: -30px;
 
         &-vide {
@@ -197,8 +151,6 @@
         }
       }
     }
-  }
-}
 
 /***************Page Restaurants***************/
 
@@ -368,7 +320,7 @@
 .button-commander {
   display: block;
   margin: auto;
-  width: 50%;
+  width: 200px;
 }
 
 /**********Animation-Loader**********/
@@ -514,13 +466,6 @@
 
       ul {
         padding: 0px 90px;
-
-        li {
-
-          span {
-            left: 103px;
-          }
-        }
       }
     }
 
@@ -528,17 +473,6 @@
 
       ul {
         padding: 0 70px;
-
-        a {
-
-          span {
-            right: 100px;
-          }
-
-          .coeur {
-            right: 130px;
-          }
-        }
       }
     }
 
@@ -552,17 +486,6 @@
 
     .epd {
       padding: 0 70px;
-    }
-
-    .button-commander {
-      width: 25%;
-    }
-
-    footer {
-
-      .image-footer {
-        width: 20%;
-      }
     }
   }
 
@@ -585,11 +508,6 @@
         li {
           width: 27%;
 
-          span {
-            position: initial;
-            margin: auto;
-          }
-
           i {
             right: 15px;
           }
@@ -601,10 +519,6 @@
       p {
         margin-bottom: 10px;
       }
-    }
-
-    .button-commander {
-      width: 10%;
     }
 
     .restaurants {
@@ -626,13 +540,6 @@
         li {
           width: 48%;
         }
-      }
-    }
-
-    footer {
-
-      .image-footer {
-        width: 7%;
       }
     }
 
