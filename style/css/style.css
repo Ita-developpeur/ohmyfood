@@ -31,12 +31,8 @@ footer {
   background-color: #353535;
   padding: 22px 20px 33px 20px;
 }
-footer h3 {
-  font-family: "Shrikhand";
-  font-style: italic;
-  font-weight: 900;
-  font-size: 18px;
-  color: #fff;
+footer .image-footer {
+  width: 30%;
 }
 footer ul {
   display: flex;
@@ -72,6 +68,7 @@ button {
 button:hover, button:focus {
   opacity: 0.85;
   transition: all 0.2s linear;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 /***************Version Tablette***************/
@@ -79,10 +76,6 @@ button:hover, button:focus {
   footer {
     flex-direction: row-reverse;
     justify-content: space-evenly;
-  }
-  h3 {
-    display: flex;
-    align-items: center;
   }
 }
 /***************Version Desktop***************/
@@ -97,6 +90,15 @@ button:hover, button:focus {
   h1 {
     font-size: 40px;
     margin-bottom: 20px;
+  }
+  footer {
+    justify-content: end;
+    padding: 65px 20px 33px 20px;
+  }
+  footer ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
   }
 }
 .localisation {
@@ -145,6 +147,7 @@ button:hover, button:focus {
 .reservation a:hover {
   opacity: 0.85;
   transition: all 0.2s linear;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
 }
 
 /************Fonctionnement************/
@@ -342,6 +345,7 @@ button:hover, button:focus {
 .restaurant-main {
   background-color: #F6F6F6;
   border-radius: 40px 40px 0 0;
+  padding-bottom: 30px;
 }
 
 .epd {
@@ -412,15 +416,13 @@ button:hover, button:focus {
 }
 
 .button-commander {
-  padding-top: 30px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin: auto;
+  width: 50%;
 }
 
 /**********Animation-Loader**********/
-#loader {
+[id=loader] {
   width: 100px;
   height: 100px;
   -webkit-transform: translate(-50%, -50%);
@@ -431,7 +433,7 @@ button:hover, button:focus {
   animation: loader 2s 100ms;
   opacity: 0;
 }
-#loader .un {
+[id=loader] .un {
   width: 120px;
   height: 120px;
   border: 2px solid #9356DC;
@@ -442,7 +444,7 @@ button:hover, button:focus {
   -webkit-animation: spin-right 2s linear infinite;
   animation: spin-right 2s linear infinite;
 }
-#loader .deux {
+[id=loader] .deux {
   width: 100px;
   height: 100px;
   border: 2px solid #9356DC;
@@ -454,7 +456,7 @@ button:hover, button:focus {
   -webkit-animation: spin-left 1s linear infinite;
   animation: spin-left 1s linear infinite;
 }
-#loader .trois {
+[id=loader] .trois {
   width: 80px;
   height: 80px;
   border: 2px solid #9356DC;
@@ -467,17 +469,11 @@ button:hover, button:focus {
 }
 
 @keyframes spin-left {
-  0% {
-    transform: rotate(0deg);
-  }
   100% {
     transform: rotate(-360deg);
   }
 }
 @keyframes spin-right {
-  0% {
-    transform: rotate(0deg);
-  }
   100% {
     transform: rotate(360deg);
   }
@@ -545,9 +541,6 @@ button:hover, button:focus {
 /***************Version Tablette***************/
 @media (min-width: 768px) {
   .fonctionnement ul {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
     padding: 0px 90px;
   }
   .fonctionnement ul li span {
@@ -571,11 +564,77 @@ button:hover, button:focus {
   .epd {
     padding: 0 70px;
   }
+  .button-commander {
+    width: 25%;
+  }
+  footer .image-footer {
+    width: 20%;
+  }
 }
 /***************Version Desktop***************/
 @media (min-width: 1200px) {
+  .fonctionnement h2 {
+    margin-bottom: 30px;
+    margin-left: 140px;
+  }
+  .fonctionnement ul {
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+  }
+  .fonctionnement ul li {
+    width: 27%;
+  }
+  .fonctionnement ul li span {
+    position: initial;
+    margin: auto;
+  }
+  .fonctionnement ul li i {
+    right: 15px;
+  }
   .reservation p {
     margin-bottom: 10px;
+  }
+  .button-commander {
+    width: 10%;
+  }
+  .restaurants {
+    padding: 40px 100px;
+  }
+  .restaurants h2 {
+    justify-content: initial;
+    display: flex;
+    position: relative;
+    left: 70px;
+  }
+  .restaurants ul {
+    flex-direction: row;
+    gap: 34px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .restaurants ul li {
+    width: 48%;
+  }
+  footer .image-footer {
+    width: 7%;
+  }
+  .restaurant-main {
+    padding-bottom: 30px;
+    margin: 200px;
+  }
+  .menu {
+    padding: 120px;
+  }
+  .image-restaurant {
+    object-fit: cover;
+    height: 500px;
+    display: flex;
+    left: 0;
+  }
+  .coeur-restaurant {
+    right: 460px;
+    margin-top: -80px;
   }
 }
 

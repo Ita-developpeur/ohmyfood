@@ -48,6 +48,7 @@
     &:hover {
       opacity: 0.85;
       transition: all 0.2s linear;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.35);
     }
   }
 }
@@ -283,6 +284,7 @@
 .restaurant-main {
   background-color: #F6F6F6;
   border-radius: 40px 40px 0 0;
+  padding-bottom: 30px;
 }
 
 .epd {
@@ -364,16 +366,14 @@
   }
 
 .button-commander {
-  padding-top: 30px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  margin: auto;
+  width: 50%;
 }
 
 /**********Animation-Loader**********/
 
-#loader {
+[id="loader"] {
   width: 100px;
   height: 100px;
   -webkit-transform: translate(-50%, -50%);
@@ -423,20 +423,12 @@
 }
 
 @keyframes spin-left {
-  0% {
-      transform: rotate(0deg);
-  }
-
   100% {
       transform: rotate(-360deg);
   }
 }
 
 @keyframes spin-right {
-  0% {
-      transform: rotate(0deg);
-  }
-
   100% {
       transform: rotate(360deg);
   }
@@ -521,9 +513,6 @@
     .fonctionnement {
 
       ul {
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
         padding: 0px 90px;
 
         li {
@@ -564,15 +553,107 @@
     .epd {
       padding: 0 70px;
     }
+
+    .button-commander {
+      width: 25%;
+    }
+
+    footer {
+
+      .image-footer {
+        width: 20%;
+      }
+    }
   }
 
 /***************Version Desktop***************/
 
   @media (min-width: 1200px) {
 
+    .fonctionnement {
+
+      h2 {
+        margin-bottom: 30px;
+        margin-left: 140px;
+      }
+
+      ul {
+        flex-direction: row;
+        gap: 30px;
+        justify-content: center;
+
+        li {
+          width: 27%;
+
+          span {
+            position: initial;
+            margin: auto;
+          }
+
+          i {
+            right: 15px;
+          }
+        }
+      }
+    }
+
     .reservation {
       p {
         margin-bottom: 10px;
       }
+    }
+
+    .button-commander {
+      width: 10%;
+    }
+
+    .restaurants {
+      padding: 40px 100px;
+
+      h2 {
+        justify-content: initial;
+        display: flex;
+        position: relative;
+        left: 70px;
+      }
+
+      ul {
+        flex-direction: row;
+        gap: 34px;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    
+        li {
+          width: 48%;
+        }
+      }
+    }
+
+    footer {
+
+      .image-footer {
+        width: 7%;
+      }
+    }
+
+    .restaurant-main {
+      padding-bottom: 30px;
+      margin: 200px;
+    }
+
+    .menu {
+      padding: 120px;
+    }
+
+    .image-restaurant {
+      object-fit: cover;
+      height: 500px;
+      display: flex;
+      left: 0;
+    }
+
+    .coeur-restaurant {
+      right: 460px;
+      margin-top: -80px;
     }
   }
