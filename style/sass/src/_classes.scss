@@ -522,7 +522,7 @@
     }
 
     .restaurants {
-      padding: 40px 100px;
+      padding: 40px 96px;
 
       h2 {
         justify-content: initial;
@@ -545,11 +545,20 @@
 
     .restaurant-main {
       padding-bottom: 30px;
-      margin: 200px;
+      margin: 0 200px 0 200px;
+    }
+
+    .titre-restaurant {
+      margin-top: 20px;
+    }
+
+    .image-menu {
+      display: flex;
+      margin-top: 440px;
     }
 
     .menu {
-      padding: 120px;
+      padding: 0 120px 0 120px;
     }
 
     .image-restaurant {
@@ -557,10 +566,23 @@
       height: 500px;
       display: flex;
       left: 0;
+      top: 78px;
     }
 
     .coeur-restaurant {
       right: 460px;
       margin-top: -80px;
+    }
+
+    .logo-menus {
+
+      img {
+        width: 200px;
+        padding: 20px 8px;
+      }
+
+      i {
+        top: 30px;
+      }
     }
   }
