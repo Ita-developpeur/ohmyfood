@@ -1,3 +1,11 @@
+[type="checkbox"] {
+  display: none;
+}
+
+[type="checkbox"]:checked ~ .fa-heart {
+  background-color: red;
+}
+
 .localisation {
   display: flex;
   background-color: #eaeaea;
@@ -80,6 +88,7 @@
       background-color: #f6f6f6;
       box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
       position: relative;
+      cursor: pointer;
 
       &:hover i,
       &:focus i {
@@ -120,6 +129,7 @@
         position: absolute;
         right: 50px;
         margin-top: -30px;
+        cursor: pointer;
 
         &-vide {
           position: absolute;
@@ -144,7 +154,7 @@
           &:focus {
             opacity: 1;
             background: linear-gradient(to top, #9356DC, #FF79DA);
-            transition: all 400ms ease-out;
+            transition: all 500ms ease-out;
             -webkit-background-clip: text;
             background-clip: text;
           }
@@ -202,6 +212,7 @@
   position: absolute;
   right: 60px;
   margin-top: -60px;
+  cursor: pointer;
 
   .coeur-vide {
     position: absolute;
@@ -270,6 +281,7 @@
       border: none;
       background-color: #FFF;
       box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
 
       &:hover,
       &:focus {

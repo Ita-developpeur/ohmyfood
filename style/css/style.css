@@ -149,6 +149,14 @@ button:hover, button:focus {
     margin-right: 20px;
   }
 }
+[type=checkbox] {
+  display: none;
+}
+
+[type=checkbox]:checked ~ .fa-heart {
+  background-color: red;
+}
+
 .localisation {
   display: flex;
   background-color: #eaeaea;
@@ -223,6 +231,7 @@ button:hover, button:focus {
   background-color: #f6f6f6;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   position: relative;
+  cursor: pointer;
 }
 .fonctionnement ul li:hover i, .fonctionnement ul li:focus i {
   color: #9356dc;
@@ -256,6 +265,7 @@ button:hover, button:focus {
   position: absolute;
   right: 50px;
   margin-top: -30px;
+  cursor: pointer;
 }
 .restaurants .coeur-vide {
   position: absolute;
@@ -274,7 +284,7 @@ button:hover, button:focus {
 .restaurants .coeur-rempli:hover, .restaurants .coeur-rempli:focus {
   opacity: 1;
   background: linear-gradient(to top, #9356DC, #FF79DA);
-  transition: all 400ms ease-out;
+  transition: all 500ms ease-out;
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -325,6 +335,7 @@ button:hover, button:focus {
   position: absolute;
   right: 60px;
   margin-top: -60px;
+  cursor: pointer;
 }
 .coeur-restaurant .coeur-vide {
   position: absolute;
@@ -384,6 +395,7 @@ button:hover, button:focus {
   border: none;
   background-color: #FFF;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 .epd li:hover .validation i, .epd li:focus .validation i {
   width: 60px;
