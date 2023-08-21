@@ -1,0 +1,16 @@
+$colors: (
+  violet:#9356DC,
+  bleu-fonce:#003A68,
+  bleu-clair:#89C8FA,
+  vert:#008766,
+  vert-clair:#99E2D0,
+  rose:#fcc0ce,
+  blanc:#fff,
+  noir:#000
+);
+
+:root {
+    @each $key, $value in $colors {
+      --#{$key}: #{$value};
+    }
+  }
