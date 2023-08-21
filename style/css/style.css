@@ -396,6 +396,7 @@ button:hover, button:focus {
   background-color: #FFF;
   box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  overflow: hidden;
 }
 .epd li:hover .validation i, .epd li:focus .validation i {
   width: 60px;
@@ -419,6 +420,20 @@ button:hover, button:focus {
   position: relative;
   right: -10px;
   bottom: -16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.epd li h3 {
+  font-size: 1rem;
+}
+.epd li p {
+  font-size: 0.8rem;
+}
+.epd li h3,
+.epd li p {
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .epd li .validation i {
   display: flex;
@@ -569,7 +584,7 @@ button:hover, button:focus {
     justify-content: center;
   }
   .coeur-restaurant {
-    right: 250px;
+    right: 30vw;
   }
   .epd {
     padding: 0 70px;
@@ -635,7 +650,7 @@ button:hover, button:focus {
     top: 78px;
   }
   .coeur-restaurant {
-    right: 460px;
+    right: 40vw;
     margin-top: -80px;
   }
   .logo-menus img {

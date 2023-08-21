@@ -282,6 +282,7 @@
       background-color: #FFF;
       box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
       cursor: pointer;
+      overflow: hidden;
 
       &:hover,
       &:focus {
@@ -311,6 +312,23 @@
         position: relative;
         right: -10px;
         bottom: -16px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+
+      h3 {
+        font-size: 1rem;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+
+      h3,
+      p {
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       .validation i {
@@ -493,7 +511,7 @@
     }
 
     .coeur-restaurant {
-      right: 250px;
+      right: 30vw;
     }
 
     .epd {
@@ -582,7 +600,7 @@
     }
 
     .coeur-restaurant {
-      right: 460px;
+      right: 40vw;
       margin-top: -80px;
     }
 
