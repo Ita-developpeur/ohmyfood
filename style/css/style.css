@@ -417,9 +417,7 @@ button:hover, button:focus {
 .epd li .nom-plats {
   display: flex;
   flex-direction: column;
-  position: relative;
-  right: -10px;
-  bottom: -16px;
+  padding: 20px 0px 0px 5px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -438,8 +436,8 @@ button:hover, button:focus {
 .epd li .validation i {
   display: flex;
   position: relative;
-  top: -40px;
-  height: 400%;
+  top: -54px;
+  height: 460%;
   width: 0px;
   background-color: #99E2D0;
   color: transparent;
