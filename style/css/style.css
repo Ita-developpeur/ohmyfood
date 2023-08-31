@@ -405,20 +405,21 @@ button:hover, button:focus {
   font-weight: 700;
   right: 10px;
   position: relative;
+  bottom: 15px;
 }
 .epd li .nom-plats {
   display: flex;
   flex-direction: column;
-  padding: 20px 0px 0px 5px;
+  padding: 17px 95px 0px 10px;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 .epd li h3 {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 .epd li p {
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 .epd li h3,
 .epd li p {
@@ -428,7 +429,7 @@ button:hover, button:focus {
 .epd li .validation i {
   display: flex;
   position: relative;
-  top: -54px;
+  top: -62px;
   height: 460%;
   width: 0px;
   background-color: #99E2D0;
